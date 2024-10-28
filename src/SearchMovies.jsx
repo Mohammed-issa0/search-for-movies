@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./index.css";
 export default function SearchMovies() {
   const [query, setQuery] = useState("");
   const [movies, setMovies] = useState([]);
@@ -42,7 +42,10 @@ export default function SearchMovies() {
           name="query"
           placeholder="i.e. Jurassic Park"
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => {
+            setQuery(e.target.value);
+            if (e.target.value == "") setMovies([]);
+          }}
           onKeyPress={handleKeyPress} // إضافة الحدث هنا
         />
         <button className="button" type="button" onClick={searchMovies}>
