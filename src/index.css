@@ -13,7 +13,7 @@ body {
   padding: 0;
   background-color: rgba(0, 0, 0, 0.5); /* لون خلفية داكن مع شفافية */
   color: #ffffff;
-  background-image: url(./bg.jpg); /* صورة الخلفية */
+  background-image: url("./assets/bg.jpg"); /* صورة الخلفية */
   background-size: cover; /* تغطية كامل الصفحة */
   background-position: center; /* لتوسيط صورة الخلفية */
   background-blend-mode: darken; /* لدمج لون الخلفية مع الصورة */
